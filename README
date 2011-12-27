@@ -1,0 +1,7 @@
+Score Tracker is customizable score tracking application for webOS. It can be
+used for many different sports / games. It has repository for sport/game rules
+which can be imported or the user can create a new set of rules if the existing
+ones wont satisfy his needs. The UI adapts based on the defined rules to create
+an user interface that is easy and fast to use. This way user can effect how the
+scores are tracked and adjust the rules based on weather his playing the game
+while marking down the scores or sitting and watching the game.
