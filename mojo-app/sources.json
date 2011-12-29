@@ -1,0 +1,10 @@
+[
+    {"source": "app\/assistants\/app-assistant.js"},
+    {"source": "app\/assistants\/dash-assistant.js"}, 
+    {"source": "app\/assistants\/gdm-assistant.js"}, 
+    {"source": "app\/assistants\/list-assistant.js"},
+    {"source": "app\/assistants\/main-assistant.js"},
+    {"source": "app\/assistants\/score-assistant.js"},
+    {"source": "app\/assistants\/setup-assistant.js"},
+    {"source": "app\/assistants\/wizard-assistant.js"}
+]

@@ -1,0 +1,12 @@
+{
+  "id": "org.e.lnx.wee.scoretracker",
+  "package_format_version": 2,
+  "loc_name": "Score Tracker",
+  "version": "0.1.5",
+  "icon": "icon.png",
+  "miniicon": "icon.png",
+  "vendor": "Enlightened Linux Solutions",
+  "vendorurl": "wee.e-lnx.org",
+  "app": "org.e.lnx.wee.scoretracker",
+  "services": []
+}

@@ -1,0 +1,11 @@
+{
+	"id": "org.e.lnx.wee.scoretracker",
+	"title": "Score Tracker",
+	"version": "0.1.5",
+	"vendor": "wee.e-lnx.org",
+	"main": "index.html",
+	"icon": "icon.png",
+	"type": "web",
+	"removable": true,
+	"noWindow": "true"
+}

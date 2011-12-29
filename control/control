@@ -1,0 +1,9 @@
+Package: org.e.lnx.wee.scoretracker
+Version: 0.1.5
+Architecture: all
+Size: 0
+Description: Score Tracker
+Maintainer: Janne Julkunen <janne.julkunen@wee.e-lnx.org>
+Section: misc
+Priority: optional
+Source: { "Feed":"Enlightened Linux Applications", "Type":"Application", "Category":"System Utilities", "LastUpdated":"0000000000", "Title":"Score Tracker", "FullDescription":"", "Homepage":"", "Icon":"", "Screenshots":[], "License":"BSD License", "MinWebOSVersion": "2.1.0" }

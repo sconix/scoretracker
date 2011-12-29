@@ -1,0 +1,138 @@
+.main .palm-page-header-wrapper .icon
+{
+	width: 76px;
+	height: 75px;
+	background: url(../icon.png) center center no-repeat;
+}
+
+.main .palm-page-header-wrapper .title
+{
+	padding-left: 80px;
+}
+
+.main .palm-page-header-wrapper .title .version
+{
+	float: right;
+	padding-top: 15px;
+	padding-right: 15px;
+	font-size: 12px;
+	color: #888;
+	text-transform: lowercase;
+}
+
+.main .palm-page-header-wrapper .title.sub
+{
+	font-size: 14px;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.main .palm-page-header-wrapper .title.main
+{
+	font-size: 28px;
+	padding-top: 5px;
+	padding-bottom: 0px;
+}
+
+.category {
+	padding: 5px 8px 0px 8px;
+}
+
+.category center {
+	color: #3c3c3c;
+	font-size: 18px;
+	padding: 3px 3px 6px 3px;
+	background: #afafa8;
+}
+
+.category .note {
+	color: #3c3c3c;
+
+	padding: 0px 3px 3px 3px;
+	background: #afafa8;
+	 font-size: 14px;
+}
+
+.palm-row-wrapper .title.description
+{
+	font-size: 18px;
+  line-height: 22px;
+  padding-top: 8px;
+  padding-bottom: 1px;
+}
+
+.palm-row-wrapper .title.sub
+{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-bottom: 9px;
+  padding-top: 1px;
+  color: #999;
+  font-size: 14px;
+}
+
+
+.palm-dashboard-controls-container {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.control-button {
+	width: 48px;
+	height: 48px;
+	float: right;
+		text-align: center;
+	font-weight: bold;
+	padding-top: 5px;
+	font-size: 28px;
+/*    background: url(../images/dashboard_buttons.png) top left no-repeat;*/
+}
+
+.control-score {
+	text-align: center;
+	font-weight: bold;
+	padding-top: 8px;
+	font-size: 24px;
+	
+	width: 68px;
+	height: 48px;
+	float: right;
+}
+
+.control-button.selected { background-position-y: -48px; }
+
+.control-button.score { background-position-x: -48px; }
+.control-button.minus { background-position-x: -96px; }
+.control-button.plus { background-position-x: -142px; }
+
+.palm-dashboard-text,
+.dashboard-title {
+    z-index: 1;
+    position: relative;
+    margin-right: 168px;
+    padding-top: 6px;
+	font-size: 24px;    
+    
+}
+
+.dashboard-action {
+	padding-top: 6px;
+	text-align: center;
+	font-size: 24px;	
+}
+
+.command-popup-menu {
+/*	position: fixed;
+	top: 182px;*/
+	width:290px;
+/*	left: 15px;
+	z-index: 32;*/
+}
+
+.popup-menu-scrim {
+	background: transparent;
+	z-index: 10;
+}
+

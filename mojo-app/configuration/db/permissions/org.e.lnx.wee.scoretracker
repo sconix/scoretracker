@@ -1,0 +1,13 @@
+[
+	{
+		"type": "db.kind",
+		"object": "org.e.lnx.wee.scoretracker:1",
+		"caller": "org.e.lnx.wee.scoretracker",
+		"operations": {
+			"create": "allow",
+			"read": "allow",
+			"update": "allow",
+			"delete": "allow"
+		}
+	}
+]

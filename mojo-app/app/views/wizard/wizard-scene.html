@@ -1,0 +1,421 @@
+<div id="main" class="wizard">
+	<div class="palm-page-header multi-line">
+		<div class="palm-page-header-wrapper">
+			<div class="icon"></div>
+			<div class="title new">
+				<span id="main-title">Rules of the game - (1/6)</span>
+			</div>
+		</div>
+	</div>
+
+	<div id="stage1" style="display: block;">
+		<div class="category"><center>
+			Generic Info About The Game
+			<div class="note">(Whats the name of the game?)</div>
+		</center></div>
+
+		<div class="palm-group">
+			<div class="palm-group-title">Name of the game</div>
+
+			<div class="palm-list">
+				<div class='palm-row single'>
+					<div class='palm-row-wrapper'>
+						<div class='textfield-group' x-mojo-focus-highlight="true">
+							<div class="title">
+								<div id="GameName" x-mojo-element="TextField"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="palm-group">
+			<div class="palm-group-title">Is the game round based</div>
+
+			<div class="palm-list">
+				<div class='palm-row single'>
+					<div class='palm-row-wrapper'>
+						<div id="GameType" x-mojo-element="ListSelector"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="palm-group">
+			<div class="palm-group-title">Allow team based playing</div>
+
+			<div class="palm-list">
+				<div class='palm-row single'>
+					<div class='palm-row-wrapper'>
+						<div id="GameTeams" x-mojo-element="ListSelector"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="stage2" style="display: none;">
+		<div class="category"><center>
+			Number Of Players / Teams
+			<div class="note">(Who gets to play and how?)</div>
+		</center></div>
+
+		<div class="palm-group">
+			<div class="palm-group-title">Number of players</div>
+
+			<div class="palm-list">
+				<div class='palm-row single' id="PlayersNoRow">
+					<div class='palm-row-wrapper'>
+						<div id="GamePlayersNo" x-mojo-element="ListSelector"></div>
+					</div>
+				</div>
+				<div class='palm-row last' id="PlayersFixedRow" style="display:none;">
+					<div class='palm-row-wrapper'>
+						<div id="GamePlayerNo" x-mojo-element="IntegerPicker"></div>
+					</div>
+				</div>
+				<div class='palm-row last' id="PlayersRangeRow" style="display:none;">
+					<div class='palm-row-wrapper' style="min-height: 58px;">
+						<div class="title" style="float:left;">Range</div>
+							
+						<div id="GamePlayersMax" style="float:right;" x-mojo-element="IntegerPicker"></div>						
+						<div style="float:right;padding:12px 11px 0 0;">-</div>
+						<div id="GamePlayersMin" style="float:right;" x-mojo-element="IntegerPicker"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="palm-group">
+			<div class="palm-group-title">Number of teams</div>
+
+			<div class="palm-list">
+				<div class='palm-row single' id="TeamsNoRow">
+					<div class='palm-row-wrapper'>
+						<div id="GameTeamsNo" x-mojo-element="ListSelector"></div>
+					</div>
+				</div>
+				<div class='palm-row last' id="TeamsFixedRow" style="display:none;">
+					<div class='palm-row-wrapper'>
+						<div id="GameTeamNo" x-mojo-element="IntegerPicker"></div>
+					</div>
+				</div>
+				<div class='palm-row last' id="TeamsRangeRow" style="display:none;">
+					<div class='palm-row-wrapper' style="min-height: 58px;">
+						<div class="title" style="float:left;">Range</div>
+							
+						<div id="GameTeamsMax" style="float:right;" x-mojo-element="IntegerPicker"></div>						
+						<div style="float:right;padding:12px 11px 0 0;">-</div>
+						<div id="GameTeamsMin" style="float:right;" x-mojo-element="IntegerPicker"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="palm-group">
+			<div class="palm-group-title">Points within teams</div>
+
+			<div class="palm-list">
+				<div class='palm-row single'>
+					<div class='palm-row-wrapper'>
+						<div id="GamePlayerPoints" x-mojo-element="ListSelector"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="stage3" style="display: none;">
+		<div class="category">
+			<center>Points Recording And Range
+				<div class="note">(How the points are recorded?)</div>
+			</center>
+		</div>
+
+		<div class="palm-group">
+			<div class="palm-group-title">Points recording</div>
+
+			<div class="palm-list">
+				<div class='palm-row single'>
+					<div class='palm-row-wrapper'>
+						<div id="GamePointsRecording" x-mojo-element="ListSelector"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="palm-group">
+			<div class="palm-group-title">Points input range</div>
+
+			<div class="palm-list">
+				<div class='palm-row single' id="PointInputRow">
+					<div class='palm-row-wrapper'>
+						<div id="GamePointsInput" x-mojo-element="ListSelector"></div>
+					</div>
+				</div>
+				<div class='palm-row last' id="PointsCustomRow" style="display:none;">
+					<div class='palm-row-wrapper'>
+						<div class='textfield-group' x-mojo-focus-highlight="true">
+							<div class="title">
+								<div id="PointsCustom" x-mojo-element="TextField"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='palm-row last' id="PointsRangeRow" style="display:none;">
+					<div class='palm-row-wrapper' style="min-height: 58px;">
+						<div class="title" style="float:left;">Range</div>
+							
+						<div id="PointsRangeMax" style="float:right;" x-mojo-element="IntegerPicker"></div>						
+						<div style="float:right;padding:12px 11px 0 0;">-</div>
+						<div id="PointsRangeMin" style="float:right;" x-mojo-element="IntegerPicker"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="palm-group">
+			<div class="palm-group-title">Allow round skip</div>
+
+			<div class="palm-list">
+				<div class='palm-row single'>
+					<div class='palm-row-wrapper'>
+						<div id="GamePointsSkip" x-mojo-element="ListSelector"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="stage4" style="display: none;">
+		<div class="category"><center>
+			Winner And Game End Result
+			<div class="note">(Who wins, when and how?)</div>		
+		</center></div>
+
+		<div class="palm-group">
+			<div class="palm-group-title">Points limit</div>
+
+			<div class="palm-list">
+				<div class='palm-row single' id="PointsLimitRow">
+					<div class='palm-row-wrapper'>
+						<div id="GamePointsLimit" x-mojo-element="ListSelector"></div>
+					</div>
+				</div>
+				<div class='palm-row last' id="PointsFixedRow" style="display:none;">
+					<div class='palm-row-wrapper'>
+						<div class='textfield-group' x-mojo-focus-highlight="true">
+							<div class="title">
+								<div id="GamePointsFixed" x-mojo-element="TextField"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="palm-group">
+			<div class="palm-group-title">Game winner</div>
+
+			<div class="palm-list">
+				<div class='palm-row single'>
+					<div class='palm-row-wrapper'>
+						<div id="GameWinnerLogic" x-mojo-element="ListSelector"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="palm-group">
+			<div class="palm-group-title">End result</div>
+
+			<div class="palm-list">
+				<div class='palm-row single'>
+					<div class='palm-row-wrapper'>
+						<div id="GameEndResult" x-mojo-element="ListSelector"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="stage5" style="display: none;">
+		<div class="category"><center>
+			Other Statistics
+			<div class="note">(What else you want to track?)</div>
+		</center></div>
+		
+		<div class="palm-group">
+			<div class="palm-group-title">Track Other Info</div>
+
+			<div class="palm-list">
+				<div class='palm-row single'>
+					<div class='palm-row-wrapper'>
+						<div id="GameUseStats" x-mojo-element="ListSelector"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="palm-group">
+			<div class="palm-group-title">Other Statistics</div>
+
+			<div class="palm-list">
+				<div class='palm-row single'>
+					<div class='palm-row-wrapper'>
+						<div id="GameStatsList" x-mojo-element="List"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="stage6" style="display: none;">
+		<div class="category"><center>
+			Tracks / Playing Places
+			<div class="note">(Has the place any effect?)</div>
+		</center></div>
+
+		<div class="palm-group">
+			<div class="palm-group-title">Use tracks / places</div>
+
+			<div class="palm-list">
+				<div class='palm-row single'>
+					<div class='palm-row-wrapper'>
+						<div id="GameUsePlaces" x-mojo-element="ListSelector"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="palm-group">
+			<div class="palm-group-title">Tracks / places</div>
+
+			<div class="palm-list">
+				<div class='palm-row single'>
+					<div class='palm-row-wrapper'>
+						<div id="GamePlacesList" x-mojo-element="List"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="stageS" style="display: none;">
+		<div class="palm-group">
+			<div class="palm-group-title">Short Statistic ID</div>
+
+			<div class="palm-list">
+				<div class='palm-row single'>
+					<div class='palm-row-wrapper'>
+						<div class='textfield-group' x-mojo-focus-highlight="true">
+							<div class="title">
+								<div id="StatisticName" x-mojo-element="TextField"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="palm-group">
+			<div class="palm-group-title">Input Range</div>
+
+			<div class="palm-list">
+				<div class='palm-row single' id="StatsInputRow">
+					<div class='palm-row-wrapper'>
+						<div id="GameStatsInput" x-mojo-element="ListSelector"></div>
+					</div>
+				</div>
+				<div class='palm-row last' id="StatsCustomRow" style="display:none;">
+					<div class='palm-row-wrapper'>
+						<div class='textfield-group' x-mojo-focus-highlight="true">
+							<div class="title">
+								<div id="StatsCustom" x-mojo-element="TextField"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='palm-row last' id="StatsRangeRow" style="display:none;">
+					<div class='palm-row-wrapper' style="min-height: 58px;">
+						<div class="title" style="float:left;">Range</div>
+							
+						<div id="StatsRangeMax" style="float:right;" x-mojo-element="IntegerPicker"></div>						
+						<div style="float:right;padding:12px 11px 0 0;">-</div>
+						<div id="StatsRangeMin" style="float:right;" x-mojo-element="IntegerPicker"></div>
+					</div>
+				</div>
+			</div>
+		</div>		
+
+		<div class="palm-group">
+			<div class="palm-group-title">Target / Goal</div>
+
+			<div class="palm-list">
+				<div class='palm-row single'>
+					<div class='palm-row-wrapper'>
+						<div id="StatsUseTarget" x-mojo-element="ListSelector"></div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<div id="stageT" style="display: none;">
+		<div class="palm-group">
+			<div class="palm-group-title">Name of the track / place</div>
+
+			<div class="palm-list">
+				<div class='palm-row single'>
+					<div class='palm-row-wrapper'>
+						<div class='textfield-group' x-mojo-focus-highlight="true">
+							<div class="title">
+								<div id="PlaceName" x-mojo-element="TextField"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="palm-group">
+			<div class="palm-group-title">Track has rounds limit</div>
+
+			<div class="palm-list">
+				<div class='palm-row single' id="TrackRoundsRow">
+					<div class='palm-row-wrapper'>
+						<div id="TrackRoundsLimit" x-mojo-element="ListSelector"></div>
+					</div>
+				</div>
+				<div class='palm-row last' id="TrackFixedRow" style="display:none;">
+					<div class='palm-row-wrapper'>
+						<div id="TrackRoundsFixed" x-mojo-element="IntegerPicker"></div>
+					</div>
+				</div>
+			</div>
+		</div>		
+
+		<div class="palm-group">
+			<div class="palm-group-title">Track has a ideal result</div>
+
+			<div class="palm-list">
+				<div class='palm-row single' id="TrackResultRow">
+					<div class='palm-row-wrapper'>
+						<div id="TrackUseResult" x-mojo-element="ListSelector"></div>
+					</div>
+				</div>
+				<div class='palm-row last' id="TrackIdealRow" style="display:none;">
+					<div class='palm-row-wrapper'>
+						<div class='textfield-group' x-mojo-focus-highlight="true">
+							<div class="title">
+								<div id="TrackIdealResult" x-mojo-element="TextField"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+</div>
+
